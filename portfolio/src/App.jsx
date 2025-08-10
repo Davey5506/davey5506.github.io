@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import Header from './static/Header.jsx'
-import Menu from './static/Menu.jsx';
+import Header from './sections/Header.jsx'
+import Menu from './sections/Menu.jsx';
+import About from './sections/About.jsx';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -17,6 +18,7 @@ function App() {
     <>
       <Header sections={sections} windowWidth={windowWidth} setWindowWidth={setWindowWidth} setMenuOpen={setMenuOpen}/>
       <Menu sections={sections} menuOpen={menuOpen} setMenuOpen={setMenuOpen} windowWidth={windowWidth}/>
+      <About />
     </>
   )
 }
