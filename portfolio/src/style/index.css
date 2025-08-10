@@ -5,9 +5,12 @@
     --tertiary-color: #404040;
     --main-accent-color: #1A6FE5;
     --secondary-accent-color: #EEC820;
-    --font-color: F2F2F2;
+    --font-color: #F2F2F2;
     --font-family: "IBM Plex Mono", monospace;
-    --font-size: 1rem;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.75rem;
+    --font-size-p: 1.25rem;
 }
 body{
     width: 100%;
@@ -37,8 +40,32 @@ h1 {
     font-weight: 700;
     font-style: normal;
     line-height: normal;
-    font-size: 2.5rem;
+    font-size: var(--font-size-h1);
     color: white;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, var(--main-accent-color), var(--main-accent-color));
+    background-repeat: no-repeat;
+    background-size: 100% 0.75rem;
+    background-position: 0 85%;
+    font-size: var(--font-size-h2);
+    color: var(--font-color);
+}
+
+p{
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: clamp(calc(768px / 2), 50%, 50%);
+    color: var(--font-color);
 }
 
 a {
@@ -111,4 +138,39 @@ a {
 
 .mobile-menu.open {
     transform: translateX(0);
+}
+
+.portrait {
+    border-radius: 5%;
+    width: clamp(5rem, 40vw, 40vw);
+    aspect-ratio: 1 / 1;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: 1.5;
+}
+
+@media (max-width: 799px) {
+    #about {
+        align-items: center;
+        text-align: start;
+    }
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;;
 }
