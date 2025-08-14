@@ -2,7 +2,7 @@ import portrait from '../assets/portrait.jpg';
 
 function About(props) {
     return (
-        <section id="about">
+        <div className="about">
             <h2>About Me</h2>
             <div className="about-content">
                 <img src={portrait} alt="Portrait" className="portrait"></img>
@@ -14,7 +14,7 @@ function About(props) {
                 </p>
             </div>
             
-        </section>
+        </div>
     );
 }
 
