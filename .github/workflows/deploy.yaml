@@ -28,7 +28,7 @@ jobs:
 
       - name: Upload build artifact
         uses: Davey5506/upload-artifact@v4
-        working-directory: ./portfolio/  # Ensure this is the root of your project
         with:
           name: dist-files # Name for the artifact
           path: dist       # Path to the directory created by Vite's build command
+        working-directory: ./portfolio/  # Ensure this is the root of your project
