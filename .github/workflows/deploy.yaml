@@ -24,6 +24,7 @@ jobs:
 
       - name: Build project
         run: npm run build # Step 4: Run the Vite build command
+        working-directory: ./portfolio/  # Ensure this is the root of your project
 
       - name: Upload build artifact
         uses: Davey5506/upload-artifact@v4
