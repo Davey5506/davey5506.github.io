@@ -28,13 +28,13 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: Davey5506/configure-pages@v4
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: Davey5506/upload-pages-artifact@v3
         with:
           path: ./your-project-folder/dist # Path to the build output
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: Davey5506/deploy-pages@v4
