@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
 
       - name: Setup Node
         uses: actions/setup-node@v4
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v1.10.10
 
       - name: Build project
         run: npm run build
