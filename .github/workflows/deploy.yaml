@@ -8,10 +8,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest  # Use a fresh Ubuntu runner
-  permissions:
-    contents: write # Needed to push to gh-pages branch
-    pages: write # Needed to manage Pages deployment
-    id-token: write # Needed for OIDC authentication
+    permissions:
+      contents: write # Needed to push to gh-pages branch
+      pages: write # Needed to manage Pages deployment
+      id-token: write # Needed for OIDC authentication
 
   steps:
     - name: Checkout repository
