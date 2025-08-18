@@ -33,7 +33,7 @@ jobs:
       - name: Upload build artifact
         uses: Davey5506/upload-pages-artifact@v3
         with:
-          path: ./your-project-folder/dist # Path to the build output
+          path: ./portfolio/dist # Path to the build output
 
       - name: Deploy to GitHub Pages
         id: deployment
