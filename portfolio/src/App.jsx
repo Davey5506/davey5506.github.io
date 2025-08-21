@@ -3,7 +3,7 @@ import Header from './sections/Header.jsx'
 import Menu from './sections/Menu.jsx';
 import About from './sections/About.jsx';
 import Skills from './sections/Skills.jsx';
-import Education from './Education.jsx';
+import Education from './sections/Education.jsx';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
