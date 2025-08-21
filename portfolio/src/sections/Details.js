@@ -1,3 +1,4 @@
+// Assemble Skills
 const skill_names = [
         "Autodesk Fusion 360", 
         "SolidWorks",
@@ -32,4 +33,74 @@ for (let i = 0; i < skill_names.length; i++) {
     });
 }
 
-export default skills;
+
+// Assemble Education
+const schools = [
+    "Univsity of Delaware",
+    "Penncrest High School"
+]
+
+const degrees = [
+    "B.E. Electrical Engineering",
+    "Diploma"
+]
+
+const gpas = [
+    3.61,
+    3.67
+]
+
+const dates = [
+    "September 2024 - Present",
+    "September 2020 - May 2024"
+];
+
+const courses = [
+    // UD Courses
+    [
+        {
+            name: "CPEG 202 - Introduction to Digital Systems",
+            url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=576012&print",
+            dates: "Febuaryu 2025 - May 2025"
+        },
+        {
+            name: "CISC 210 - Introduction to Systems Programming",
+            url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=577546&print",
+            dates: "September 2024 - December 2024"
+        },
+        {
+            name: "EGGG 101 - Introduction to Engineering",
+            url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=575686&print",
+            dates: "September 2024 - December 2024"
+        },
+        {
+            name: "CISC 106 - Computer Science for Engineers",
+            url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=575162&print",
+            dates: "September 2024 - December 2024"
+        }
+    ],
+    // Penncrest Courses
+    [
+        {
+            name: "Manufacturing, Design and Engineering I",
+            dates: "September 2022 - June 2023"
+        },
+        {
+            name: "Manufacturing, Design and Engineering II",
+            dates: "September 2023 - June 2024"
+        }
+    ]
+];
+
+const education = [];
+for ( let i = 0; i < schools.length; i++) {
+    education.push({
+        school: schools[i],
+        degree: degrees[i],
+        gpa: gpas[i],
+        date: dates[i],
+        courses: courses[i]
+    });
+}
+
+export default { skills, education };
