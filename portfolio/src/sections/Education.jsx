@@ -20,7 +20,7 @@ function Education() {
     function mapCourses(courses){
         return courses.map((course, index) => (
             <div key={index} >
-                <p style={{textAlign: "left"}}>{course.name} <br /> {course.dates}</p>
+                <h4 style={{alignText: "left"}}>{course.name} <br /> {course.dates}</h4>
             </div>
         ));            
     }
@@ -32,7 +32,7 @@ function Education() {
         >
             <h3>{school.school}</h3>
             <div style={{alignItems: "flex-start"}}>
-                <h5>{school.degree}, GPA {school.gpa}</h5>
+                <h4>{school.degree}, GPA {school.gpa}</h4>
                 {mapCourses(school.courses)}
             </div>
         </div>
