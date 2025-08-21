@@ -226,6 +226,7 @@ a {
 .scroll-content .scroll-item {
     flex: 0 0 100%;
     display: flex;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
