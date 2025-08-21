@@ -19,8 +19,16 @@ function Education() {
 
     function mapCourses(courses){
         return courses.map((course, index) => (
-            <div key={index} >
-                <h4 style={{alignText: "left"}}>{course.name} <br /> {course.dates}</h4>
+            <div 
+                key={index} 
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignContent: "center",
+                    justifyContent: "center",
+                }}
+            >
+                <h4 style={{textAlign: "left"}}>{course.name}<br />{course.dates}</h4>
             </div>
         ));            
     }
@@ -31,8 +39,15 @@ function Education() {
             className="scroll-item"
         >
             <h3>{school.school}</h3>
-            <div style={{alignItems: "flex-start"}}>
-                <h4>{school.degree}, GPA {school.gpa}</h4>
+            <div style={{alignItems: "center"}}>
+                <div style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignContent: "center",
+                    justifyContent: "center",
+                }}>
+                    <h4>{school.degree}<br />GPA {school.gpa}</h4>
+                </div>
                 {mapCourses(school.courses)}
             </div>
         </div>
