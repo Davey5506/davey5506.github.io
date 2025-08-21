@@ -1,31 +1,9 @@
 import { useRef, useState, useLayoutEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import skills from './Details';
+import { Pskills } from './Details.js';
 
-function Skills(props) {
+function Skills() {
     const scrollContentRef = useRef(null);
-    const [containerHeight, setContainerHeight] = useState('auto');
-
-    useLayoutEffect(() => {
-        const calculateHeight = () => {
-            if (scrollContentRef.current) {
-                const items = scrollContentRef.current.children;
-                let maxHeight = 0;
-                for (let i = 0; i < items.length; i++) {
-                    if (items[i].offsetHeight > maxHeight) {
-                        maxHeight = items[i].offsetHeight;
-                    }
-                }
-                if (maxHeight > 0) {
-                    setContainerHeight(maxHeight);
-                }
-            }
-        };
-
-        calculateHeight();
-        window.addEventListener('resize', calculateHeight);
-        return () => window.removeEventListener('resize', calculateHeight);
-    }, [skills]);
 
     const scroll = (direction) => {
         if (scrollContentRef.current) {
@@ -38,28 +16,27 @@ function Skills(props) {
         }
     };
 
-    const skillElements = skills.map((skills, index) => (
-        <div key={index} className="scroll-item">
-            <h3>{skills.name}</h3>
-            <p>{skills.details}</p>
+    const skillElements = Pskills.map((skill) => (
+        <div key={skill.name} className="scroll-item">
+            <h3>{skill.name}</h3>
+            <p>{skill.details}</p>
         </div>
     ));
 
     return (
-        <>
+        <section id="skills">
             <h2 style={{marginLeft: "2rem"}}>Skills</h2>
             <div className="scroll-container">
                 <div
                     className="scroll-content"
                     ref={scrollContentRef}
-                    style={{ height: containerHeight === 'auto' ? 'auto' : `${containerHeight}px` }}
                 >
                     {skillElements}
                 </div>
                 <button className="scroll-button left" onClick={() => scroll('left')}><FaChevronLeft /></button>
                 <button className="scroll-button right" onClick={() => scroll('right')}><FaChevronRight /></button>
             </div>
-        </>
+        </section>
     )
 }
 export default Skills;
