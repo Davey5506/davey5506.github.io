@@ -25,9 +25,9 @@ const skill_details = [
     "Able to approach problems in a systematic way to find effective solutions, both in academic and professional settings."
 ];
 
-const skills = [];
+const Pskills = [];
 for (let i = 0; i < skill_names.length; i++) {
-    skills.push({
+    Pskills.push({
         name: skill_names[i],
         details: skill_details[i]
     });
@@ -42,7 +42,7 @@ const schools = [
 
 const degrees = [
     "B.E. Electrical Engineering",
-    "Diploma"
+    "High School Diploma"
 ]
 
 const gpas = [
@@ -61,7 +61,7 @@ const courses = [
         {
             name: "CPEG 202 - Introduction to Digital Systems",
             url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=576012&print",
-            dates: "Febuaryu 2025 - May 2025"
+            dates: "Febuary 2025 - May 2025"
         },
         {
             name: "CISC 210 - Introduction to Systems Programming",
@@ -92,9 +92,9 @@ const courses = [
     ]
 ];
 
-const education = [];
+const Schools = [];
 for ( let i = 0; i < schools.length; i++) {
-    education.push({
+    Schools.push({
         school: schools[i],
         degree: degrees[i],
         gpa: gpas[i],
@@ -103,4 +103,4 @@ for ( let i = 0; i < schools.length; i++) {
     });
 }
 
-export default { skills, education };
+export { Pskills, Schools };
