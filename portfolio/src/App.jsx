@@ -5,6 +5,8 @@ import About from './sections/About.jsx';
 import Skills from './sections/Skills.jsx';
 import Education from './sections/Education.jsx';
 import Awards from './sections/Awards.jsx';
+import './sections/Footer.jsx';
+import Footer from './sections/Footer.jsx';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -24,6 +26,7 @@ function App() {
       <Skills />
       <Education />
       <Awards />
+      <Footer />
     </>
   )
 }
