@@ -59,24 +59,24 @@ const courses = [
     // UD Courses
     [
         {
-            name: "CPEG 202 - Introduction to Digital Systems",
-            url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=576012&print",
-            dates: "Febuary 2025 - May 2025"
+            name: "CPEG 222 - Microprocessor Systems",
+            dates: "August 2025 - Present"
         },
         {
-            name: "CISC 210 - Introduction to Systems Programming",
-            url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=577546&print",
-            dates: "September 2024 - December 2024"
+            name: "ELEG 205 - Analog Circuits I",
+            dates: "August 2024 - Present"
         },
         {
-            name: "EGGG 101 - Introduction to Engineering",
-            url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=575686&print",
-            dates: "September 2024 - December 2024"
+            name: "MATH 243 - Analytic Geometry and Calculus C",
+            dates: "August 2025 - Present"
         },
         {
-            name: "CISC 106 - Computer Science for Engineers",
-            url: "https://catalog.udel.edu/preview_course.php?catoid=90&coid=575162&print",
-            dates: "September 2024 - December 2024"
+            name: "PHYS 208 - Fundamental of Physics II",
+            dates: "August 2025 - Present"
+        },
+        {
+            name: "PHYS 228 - Fundamental of Physics Laboratory II",
+            dates: "August 2025 - Present"
         }
     ],
     // Penncrest Courses
@@ -103,4 +103,32 @@ for ( let i = 0; i < schools.length; i++) {
     });
 }
 
-export { Pskills, Schools };
+// Assemble Awards
+const Earnings = [
+    {
+        name: "Eagle Scout",
+        issuer: "BSA Troop 85",
+        date: "May 2024",
+        details: ""
+    },
+    {
+        name: "Team MVP",
+        issuer: "University of Delaware, College of Engineering",
+        date: "December 2024",
+        details: "Voted by team mates as most valuable contributor to the success of our course project."
+    },
+    {
+        name: "TechCraft Excellence",
+        issuer: "University of Delaware, College of Engineering",
+        date: "December 2024",
+        details: "Awarded for demonstrating exceptional skill with CAD software and embedded systems programming."
+    },
+    {
+        name: "Excellence in Engineering",
+        issuer: "Penncrest High School",
+        date: "June 2024",
+        details: "Awarded for outstanding performance in the Manufacturing, Design and Engineering program."
+    }
+]
+
+export { Pskills, Schools, Earnings};

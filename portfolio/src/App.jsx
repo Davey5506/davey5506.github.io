@@ -4,6 +4,7 @@ import Menu from './sections/Menu.jsx';
 import About from './sections/About.jsx';
 import Skills from './sections/Skills.jsx';
 import Education from './sections/Education.jsx';
+import Awards from './sections/Awards.jsx';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -12,9 +13,8 @@ function App() {
         { name: "About", path: "#about" },
         { name: "Skills", path: "#skills" },
         { name: "Education", path: "#education" },
-        { name: "Projects", path: "#projects" },
-        { name: "Contact", path: "#contact" },
-    ];
+        { name: "Awards", path: "#Awards" }
+      ];
 
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
       <About />
       <Skills />
       <Education />
+      <Awards />
     </>
   )
 }
