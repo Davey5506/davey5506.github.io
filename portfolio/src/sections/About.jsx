@@ -7,7 +7,7 @@ function About(props) {
             <div className="about-content">
                 <div className="portrait-container">
                     <img src={portrait} alt="Portrait" className="portrait"></img>
-                    <h4 style={{textAlign: "center"}}>David Kennedy</h4>
+                    <h4 style={{textAlign: "center", margin:"0"}}>David Kennedy</h4>
                 </div>
                 <p>
                     I am a second-year Electrical Engineering student with two years of hands-on experience with CAD programs, 

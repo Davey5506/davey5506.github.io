@@ -12,7 +12,7 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [menuOpen, setMenuOpen] = useState(false);
   const sections = [
-        { name: "About", path: "#about" },
+        { name: "About", path: "#About" },
         { name: "Skills", path: "#skills" },
         { name: "Education", path: "#education" },
         { name: "Awards", path: "#Awards" }

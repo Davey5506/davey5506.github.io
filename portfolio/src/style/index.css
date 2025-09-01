@@ -138,6 +138,24 @@ a {
     font-size: 1.5rem;
 }
 
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 footer {
     width: 100%;
     height: fit-content;
@@ -279,7 +297,7 @@ footer h4 {
 .about-content {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     justify-content: space-between;
     gap: 2rem;
@@ -374,7 +392,7 @@ footer h4 {
 }
 
 .scroll-button.right {
-    right: 0.25rem;
+    right: 0.5rem;
 }
 
 #skills {
