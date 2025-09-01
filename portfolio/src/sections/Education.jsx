@@ -28,7 +28,7 @@ function Education() {
                     justifyContent: "center",
                 }}
             >
-                <h4 style={{textAlign: "left"}}>{course.name}<br />{course.dates}</h4>
+                <p style={{textAlign: "left"}}>{course.name}<br />{course.dates}</p>
             </div>
         ));            
     }

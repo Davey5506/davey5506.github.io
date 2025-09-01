@@ -19,7 +19,7 @@ function Skills() {
     const skillElements = Pskills.map((skill) => (
         <div key={skill.name} className="scroll-item">
             <h3>{skill.name}</h3>
-            <h4>{skill.details}</h4>
+            <p>{skill.details}</p>
         </div>
     ));
 
