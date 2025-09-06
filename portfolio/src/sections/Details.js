@@ -20,7 +20,7 @@ const skill_details = [
     "Proficient in using C/C++ for embedded systems programming and general software development.",
     "Understand the syntax and control flow of Python, for use in embeded systems programming and web development.",
     "Able to communicate effectively with team members inorder to facilitate project progress.",
-    "Experienced in working with teams to complete projects, both in academic and professional settings.",
+    "Experienced working with in teams to complete projects, both in academic and professional settings.",
     "Experienced in leading a team to complete a project in timely and cost effective manner.",
     "Able to approach problems in a systematic way to find effective solutions, both in academic and professional settings."
 ];
