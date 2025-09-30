@@ -388,11 +388,11 @@ footer h4 {
 }
 
 .scroll-button.left {
-    left: 0.25rem;
+    left: 1rem;
 }
 
 .scroll-button.right {
-    right: 0.5rem;
+    right: 2rem;
 }
 
 #skills {
