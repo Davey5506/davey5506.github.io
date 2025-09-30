@@ -1,3 +1,10 @@
+function splitArray(arr, n) {
+    const result = [];
+    result.push(arr.slice(0, n));
+    result.push(arr.slice(n));
+    return result;
+}
+
 // Assemble Skills
 const skill_names = [
         "Autodesk Fusion 360", 
@@ -92,16 +99,23 @@ const courses = [
     ]
 ];
 
-const Schools = [];
-for ( let i = 0; i < schools.length; i++) {
-    Schools.push({
-        school: schools[i],
-        degree: degrees[i],
-        gpa: gpas[i],
-        date: dates[i],
-        courses: courses[i]
+const HighSchool = ({
+        school: schools[1],
+        degree: degrees[1],
+        gpa: gpas[1],
+        date: dates[1],
+        courses: courses[1]
     });
-}
+
+const University = ({
+        school: schools[0],
+        degree: degrees[0],
+        gpa: gpas[0],
+        date: dates[0],
+        courses: courses[0]
+    });
+
+
 
 // Assemble Awards
 const Earnings = [
@@ -131,4 +145,4 @@ const Earnings = [
     }
 ]
 
-export { Pskills, Schools, Earnings};
+export { Pskills, HighSchool, University, Earnings};
