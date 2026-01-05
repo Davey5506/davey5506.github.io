@@ -67,23 +67,23 @@ const courses = [
     [
         {
             name: "CPEG 222 - Microprocessor Systems",
-            dates: "August 2025 - Present"
+            dates: "August 2025 - December 2025"
         },
         {
             name: "ELEG 205 - Analog Circuits I",
-            dates: "August 2024 - Present"
+            dates: "August 2024 - December 2025"
         },
         {
             name: "MATH 243 - Analytic Geometry and Calculus C",
-            dates: "August 2025 - Present"
+            dates: "August 2025 - December 2025"
         },
         {
             name: "PHYS 208 - Fundamental of Physics II",
-            dates: "August 2025 - Present"
+            dates: "August 2025 - December 2025"
         },
         {
             name: "PHYS 228 - Fundamental of Physics Laboratory II",
-            dates: "August 2025 - Present"
+            dates: "August 2025 - December 2025"
         }
     ],
     // Penncrest Courses
