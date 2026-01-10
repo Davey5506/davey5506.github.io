@@ -53,7 +53,7 @@ const degrees = [
 ]
 
 const gpas = [
-    3.61,
+    3.63,
     3.67
 ]
 
