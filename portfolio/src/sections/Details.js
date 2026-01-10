@@ -120,6 +120,12 @@ const University = ({
 // Assemble Awards
 const Earnings = [
     {
+        name: "Dean's List",
+        issuer: "University of Delaware",
+        date: "December 2024, December 2025",
+        details: "Awarded for achieving a semester GPA of 3.5 or higher."
+    },
+    {
         name: "Eagle Scout",
         issuer: "BSA Troop 85",
         date: "May 2024",
