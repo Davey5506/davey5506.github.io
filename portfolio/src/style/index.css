@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600&display=swap');
 :root {
     --primary-color: #0D0D0D;
     --secondary-color: #262626;
     --tertiary-color: #404040;
+    --card-color: #181818;
+    --card-border-color: #2E2E2E;
+    --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
     --main-accent-color: #1A6FE5;
-    --secondary-accent-color: #0EBE2C;
     --font-color: #F2F2F2;
     --font-family: "IBM Plex Mono", monospace;
+    --body-font-family: "Inter", sans-serif;
     --font-size-h1: clamp(1.75rem, 1rem + 2vw, 2.5rem);
     --font-size-h2: clamp(1.5rem, 0.8rem + 2vw, 2.25rem);
     --font-size-h3: clamp(1.25rem, 0.7rem + 1.5vw, 1.75rem);
     --font-size-h4: clamp(1.1rem, 0.6rem + 1.5vw, 1.5rem);
     --font-size-h5: clamp(1rem, 0.6rem + 1vw, 1.25rem);
-    --font-size-p: clamp(0.5rem, 0.5rem + 1vw, 1rem);
+    --font-size-p: clamp(0.95rem, 0.85rem + 0.3vw, 1.05rem);
 }
 
 #root {
@@ -62,8 +65,8 @@ h2 {
     margin-bottom: 1rem;
     background-image: linear-gradient(to right, var(--main-accent-color), var(--main-accent-color));
     background-repeat: no-repeat;
-    background-size: 100% 0.75rem;
-    background-position: 0 85%;
+    background-size: 100% 0.35rem;
+    background-position: 0 88%;
     font-family: var(--font-family);
     font-size: var(--font-size-h2);
     color: var(--font-color);
@@ -80,8 +83,8 @@ h3 {
     margin-bottom: 0.5rem;
     background-image: linear-gradient(to right, var(--main-accent-color), var(--main-accent-color));
     background-repeat: no-repeat;
-    background-size: 100% 0.75rem;
-    background-position: 0 85%;
+    background-size: 100% 0.35rem;
+    background-position: 0 88%;
 }
 
 h4 {
@@ -108,22 +111,21 @@ h5 {
 }
 
 p{
-    font-family: var(--font-family);
-    font-size: var(--font-size-h5);
+    font-family: var(--body-font-family);
+    font-size: var(--font-size-p);
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    width: clamp(calc(768px / 2), 50%, 50%);
+    line-height: 1.6;
     color: var(--font-color);
     width: clamp(250px, 60%, 800px);
 }
 
 li {
-    font-family: var(--font-family);
+    font-family: var(--body-font-family);
     font-size: var(--font-size-h5);
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.6;
     width: fit-content;
     color: var(--font-color);
 }
@@ -200,8 +202,8 @@ footer h4 {
     padding: 0 0.25rem;
     background-image: linear-gradient(to right, var(--main-accent-color), var(--main-accent-color));
     background-repeat: no-repeat;
-    background-size: 100% 0.75rem;
-    background-position: 0 85%;
+    background-size: 100% 0.35rem;
+    background-position: 0 88%;
     transition: background-size 0.2s ease-in-out;
     cursor: pointer;
 }
