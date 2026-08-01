@@ -200,10 +200,11 @@ footer {
     width: 100%;
     height: fit-content;
     background-color: var(--secondary-color);
+    border-top: 1px solid var(--card-border-color);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 2rem;
+    padding: 3rem 0 2rem;
 }
 
 @media (max-width: 799px) {
@@ -311,6 +312,9 @@ footer h4 {
     border-radius: 5%;
     width: clamp(5rem, 40vw, 500px);
     aspect-ratio: 1 / 1;
+    border: 2px solid var(--card-border-color);
+    box-shadow: var(--card-shadow);
+    object-fit: cover;
 }
 
 .about {
