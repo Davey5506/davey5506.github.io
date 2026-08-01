@@ -66,6 +66,22 @@ const courses = [
     // UD Courses
     [
         {
+            name: "ELEG 309 - Electronic Circuit Analysis I",
+            dates: "February 2026 - May 2026"
+        },
+        {
+            name: "ELEG 305 - Signals and Systems",
+            dates: "February 2026 - May 2026"
+        },
+        {
+            name: "ELEG 298 - ECE Design Challanges",
+            dates: "February 2026 - May 2026"
+        },
+        {
+            name: "MATH 351 - Engineering Mathematics I",
+            dates: "February 2026 - May 2026"
+        },
+        {
             name: "CPEG 222 - Microprocessor Systems",
             dates: "August 2025 - December 2025"
         },
@@ -119,6 +135,12 @@ const University = ({
 
 // Assemble Awards
 const Earnings = [
+    {
+        name: "SMART Scholarship",
+        issuer: "U.S. Department of War",
+        date: "April 2026",
+        details: "Awarded to students is designated STEM fields with a minimum GPA of 3.0 and demonstrate significant skills and learning ability in their field of study."
+    },
     {
         name: "Dean's List",
         issuer: "University of Delaware",
