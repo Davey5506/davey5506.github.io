@@ -3,7 +3,7 @@ import { Pskills } from './Details.js';
 function Skills() {
     const skillElements = Pskills.map((skill) => (
         <div key={skill.name} className="card">
-            <h3 title={skill.name}>{skill.name}</h3>
+            <h3>{skill.name}</h3>
             <p>{skill.details}</p>
         </div>
     ));

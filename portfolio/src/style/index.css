@@ -20,7 +20,7 @@
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: start;
     gap: 1.5rem;
     width: clamp(300px, 90%, 1100px);
@@ -49,9 +49,9 @@
     width: 100%;
     max-width: 100%;
     margin: 0 0 0.5rem;
+    font-size: 1rem;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
     background-size: 100% 0.25rem;
     background-position: 0 100%;
 }

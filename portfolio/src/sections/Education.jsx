@@ -23,7 +23,7 @@ function Education() {
                 key={school}
                 className="card"
             >
-                <h3 title={school}>{school}</h3>
+                <h3>{school}</h3>
                 <div style={{alignItems: "center", justifyItems: "center", width: "100%"}}>
                     <div style={{
                         display: "flex",
