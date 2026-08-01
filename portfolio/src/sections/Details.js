@@ -7,6 +7,7 @@ function splitArray(arr, n) {
 
 // Assemble Skills
 const skill_names = [
+        "KiCAD",
         "Autodesk Fusion 360", 
         "SolidWorks",
         "Xilinx Vivado",
@@ -20,7 +21,8 @@ const skill_names = [
     ];
 
 const skill_details = [
-    "Experienced with the 3D design and simulation suites as well as the EDA tools for PCB design.",
+    "Skilled in using KiCAD EDA software to design, simulate and manufacture electronic circuits and PCBs.",
+    "Experienced with the 3D design and simulation suites.",
     "Experienced with the 3D design and wire/pipe routing tools.",
     "Proficient with Vivado toolchain for developing designs for use the AMD Xilinx FPGAs.",
     "Proficient in using VHDL to program an FPGA as part of undergraduate coursework and personal projects.",
