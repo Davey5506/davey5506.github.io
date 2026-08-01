@@ -47,6 +47,8 @@
 
 .card h3 {
     margin: 0 0 0.5rem;
+    background-size: 100% 0.25rem;
+    background-position: 0 100%;
 }
 
 .card p {
