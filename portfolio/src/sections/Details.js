@@ -45,7 +45,7 @@ for (let i = 0; i < skill_names.length; i++) {
 
 // Assemble Education
 const schools = [
-    "Univsity of Delaware",
+    "University of Delaware",
     "Penncrest High School"
 ]
 
