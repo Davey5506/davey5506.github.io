@@ -8,7 +8,7 @@ function Header({ sections, windowWidth, setWindowWidth, setMenuOpen }) {
                 <Nav sections={sections} windowWidth={windowWidth} setWindowWidth={setWindowWidth} setMenuOpen={setMenuOpen}/>
                 
             </header>
-            <div id="About" style={{paddingBottom:"3rem"}}></div>
+            <div id="About" style={{paddingBottom:"5rem"}}></div>
         </>
     )
 }
