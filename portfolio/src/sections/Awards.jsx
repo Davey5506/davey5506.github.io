@@ -1,11 +1,11 @@
-import { Earnings } from './Details.js';
+import { awards } from './Details.js';
 
 function Awards() {
-    const awardElements = Earnings.map((earning) => (
-        <div key={earning.name} className="card">
-            <h3>{earning.name}</h3>
-            <h5 style={{textAlign: "center"}}>{earning.issuer}<br />{earning.date}</h5>
-            <p>{earning.details}</p>
+    const awardElements = awards.map((award) => (
+        <div key={award.name} className="card">
+            <h3>{award.name}</h3>
+            <h5 style={{textAlign: "center"}}>{award.issuer}<br />{award.date}</h5>
+            {award.details && <p>{award.details}</p>}
         </div>
     ));
 

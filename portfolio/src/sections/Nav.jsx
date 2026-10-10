@@ -14,16 +14,15 @@ function Nav({ sections, windowWidth, setWindowWidth, setMenuOpen }) {
             <path d="M6 24H42M6 12H42M6 36H42" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
     )
-    const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-    };
-
     useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
         window.addEventListener("resize", handleResize);
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, [setWindowWidth]);
 
     if (windowWidth > 768) {
         return (

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './sections/Header.jsx'
 import Menu from './sections/Menu.jsx';
 import About from './sections/About.jsx';
+import Experience from './sections/Experience.jsx';
 import Skills from './sections/Skills.jsx';
 import Education from './sections/Education.jsx';
 import Awards from './sections/Awards.jsx';
@@ -13,6 +14,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const sections = [
         { name: "About", path: "#About" },
+        { name: "Experience", path: "#experience" },
         { name: "Skills", path: "#skills" },
         { name: "Education", path: "#education" },
         { name: "Awards", path: "#Awards" }
@@ -23,6 +25,7 @@ function App() {
       <Header sections={sections} windowWidth={windowWidth} setWindowWidth={setWindowWidth} setMenuOpen={setMenuOpen}/>
       <Menu sections={sections} menuOpen={menuOpen} setMenuOpen={setMenuOpen} windowWidth={windowWidth}/>
       <About />
+      <Experience />
       <Skills />
       <Education />
       <Awards />

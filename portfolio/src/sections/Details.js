@@ -1,147 +1,149 @@
-function splitArray(arr, n) {
-    const result = [];
-    result.push(arr.slice(0, n));
-    result.push(arr.slice(n));
-    return result;
-}
-
-// Assemble Skills
-const skill_names = [
-        "KiCAD",
-        "Autodesk Fusion 360", 
-        "SolidWorks",
-        "Xilinx Vivado",
-        "VHDL",
-        "C/C++",
-        "Python",
-        "Communication",
-        "Teamwork",
-        "Project Management",
-        "Problem-Solving"
-    ];
-
-const skill_details = [
-    "Skilled in using KiCAD EDA software to design, simulate and manufacture electronic circuits and PCBs.",
-    "Experienced with the 3D design and simulation suites.",
-    "Experienced with the 3D design and wire/pipe routing tools.",
-    "Proficient with Vivado toolchain for developing designs for use the AMD Xilinx FPGAs.",
-    "Proficient in using VHDL to program an FPGA as part of undergraduate coursework and personal projects.",
-    "Proficient in using C/C++ for embedded systems programming and general software development.",
-    "Understand the syntax and control flow of Python, for use in embeded systems programming and web development.",
-    "Able to communicate effectively with team members inorder to facilitate project progress.",
-    "Experienced working with in teams to complete projects, both in academic and professional settings.",
-    "Experienced in leading a team to complete a project in timely and cost effective manner.",
-    "Able to approach problems in a systematic way to find effective solutions, both in academic and professional settings."
-];
-
-const Pskills = [];
-for (let i = 0; i < skill_names.length; i++) {
-    Pskills.push({
-        name: skill_names[i],
-        details: skill_details[i]
-    });
-}
-
-
-// Assemble Education
-const schools = [
-    "University of Delaware",
-    "Penncrest High School"
-]
-
-const degrees = [
-    "B.E. Electrical Engineering",
-    "High School Diploma"
-]
-
-const gpas = [
-    3.63,
-    3.67
-]
-
-const dates = [
-    "September 2024 - Present",
-    "September 2020 - May 2024"
-];
-
-const courses = [
-    // UD Courses
-    [
-        {
-            name: "ELEG 309 - Electronic Circuit Analysis I",
-            dates: "February 2026 - May 2026"
-        },
-        {
-            name: "ELEG 305 - Signals and Systems",
-            dates: "February 2026 - May 2026"
-        },
-        {
-            name: "ELEG 298 - ECE Design Challanges",
-            dates: "February 2026 - May 2026"
-        },
-        {
-            name: "MATH 351 - Engineering Mathematics I",
-            dates: "February 2026 - May 2026"
-        },
-        {
-            name: "CPEG 222 - Microprocessor Systems",
-            dates: "August 2025 - December 2025"
-        },
-        {
-            name: "ELEG 205 - Analog Circuits I",
-            dates: "August 2024 - December 2025"
-        },
-        {
-            name: "MATH 243 - Analytic Geometry and Calculus C",
-            dates: "August 2025 - December 2025"
-        },
-        {
-            name: "PHYS 208 - Fundamental of Physics II",
-            dates: "August 2025 - December 2025"
-        },
-        {
-            name: "PHYS 228 - Fundamental of Physics Laboratory II",
-            dates: "August 2025 - December 2025"
-        }
-    ],
-    // Penncrest Courses
-    [
-        {
-            name: "Manufacturing, Design and Engineering I",
-            dates: "September 2022 - June 2023"
-        },
-        {
-            name: "Manufacturing, Design and Engineering II",
-            dates: "September 2023 - June 2024"
-        }
-    ]
-];
-
-const HighSchool = ({
-        school: schools[1],
-        degree: degrees[1],
-        gpa: gpas[1],
-        date: dates[1],
-        courses: courses[1]
-    });
-
-const University = ({
-        school: schools[0],
-        degree: degrees[0],
-        gpa: gpas[0],
-        date: dates[0],
-        courses: courses[0]
-    });
-
-
-
-// Assemble Awards
-const Earnings = [
+// Skills
+const skills = [
     {
-        name: "SMART Scholarship",
+        name: "KiCAD",
+        details: "Skilled in using KiCAD EDA software to design, simulate and manufacture electronic circuits and PCBs."
+    },
+    {
+        name: "Autodesk Fusion 360",
+        details: "Experienced with its 3D design and simulation suites."
+    },
+    {
+        name: "SolidWorks",
+        details: "Experienced with its 3D design and wire/pipe routing tools."
+    },
+    {
+        name: "Xilinx Vivado",
+        details: "Proficient with the Vivado toolchain for developing designs for AMD Xilinx FPGAs."
+    },
+    {
+        name: "VHDL",
+        details: "Proficient in using VHDL to program an FPGA as part of undergraduate coursework and personal projects."
+    },
+    {
+        name: "C/C++",
+        details: "Proficient in using C/C++ for embedded systems programming and general software development."
+    },
+    {
+        name: "Python",
+        details: "Understand the syntax and control flow of Python for use in embedded systems programming and web development."
+    },
+    {
+        name: "Communication",
+        details: "Able to communicate effectively with team members in order to facilitate project progress."
+    },
+    {
+        name: "Teamwork",
+        details: "Experienced working in teams to complete projects, both in academic and professional settings."
+    },
+    {
+        name: "Project Management",
+        details: "Experienced in leading a team to complete a project in a timely and cost-effective manner."
+    },
+    {
+        name: "Problem-Solving",
+        details: "Able to approach problems in a systematic way to find effective solutions, both in academic and professional settings."
+    }
+];
+
+// Experience (most recent first)
+const experience = [
+    {
+        title: "Educational Activities Committee, Student Representative",
+        organization: "Electrical and Computer Engineering, University of Delaware",
+        date: "September 2026 - Present",
+        details: [
+            "Provide a student's perspective to the University of Delaware College of Engineering's Educational Activities Committee."
+        ]
+    },
+    {
+        title: "Undergraduate Lab Assistant",
+        organization: "Electrical and Computer Engineering, University of Delaware",
+        date: "August 2026 - Present",
+        details: [
+            "Host student office hours for assistance with analog circuit concepts.",
+            "Run lab sections where students demonstrate understanding of lecture topics from ELEG 205, Analog Circuits I."
+        ]
+    },
+    {
+        title: "ECE Grader",
+        organization: "Electrical and Computer Engineering, University of Delaware",
+        date: "August 2026 - Present",
+        details: [
+            "Grade labs for CPEG 222, Microprocessor Systems.",
+            "Help foster understanding of microprocessor functions and architectures."
+        ]
+    },
+    {
+        title: "Undergraduate Student Researcher",
+        organization: "University of Delaware",
+        date: "June 2026 - Present",
+        details: [
+            "Developed a thermoforming process for printing conductive circuits on curved surfaces for prosthetic pressure sensing.",
+            "Printed and formed circuits with an nScrypt 3Dn-300 and a Formech 450DT vacuum former, reducing ink cracking and eliminating substrate warping.",
+            "Presented the research at the Symposium for Undergraduate Research and Creative Activity."
+        ]
+    },
+    {
+        title: "ECE Ambassador",
+        organization: "Electrical and Computer Engineering, University of Delaware",
+        date: "February 2026 - Present",
+        details: [
+            "Introduced prospective students, parents, and guardians to the programs offered by the Electrical and Computer Engineering Department.",
+            "Clarified details about campus life, housing, and career-building opportunities.",
+            "Demonstrated the high community standards of the Electrical and Computer Engineering Department."
+        ]
+    },
+    {
+        title: "Peer Mentor",
+        organization: "University of Delaware",
+        date: "August 2025 - May 2026",
+        details: [
+            "Facilitated weekly discussion groups for engineering students to enhance understanding of complex course concepts.",
+            "Applied skills in leadership and communication by aiding students in understanding tools and concepts needed to succeed in the course.",
+            "Taught a cohort of 42 students concepts such as using Autodesk Fusion 360 and programming microcontrollers."
+        ]
+    }
+];
+
+// Education (rendered in this order)
+const schools = [
+    {
+        school: "University of Delaware",
+        degree: "B.E. Electrical Engineering",
+        gpa: 3.63,
+        date: "September 2024 - Present",
+        courses: [
+            { name: "ELEG 309 - Electronic Circuit Analysis I", dates: "February 2026 - May 2026" },
+            { name: "ELEG 305 - Signals and Systems", dates: "February 2026 - May 2026" },
+            { name: "ELEG 298 - ECE Design Challenges", dates: "February 2026 - May 2026" },
+            { name: "MATH 351 - Engineering Mathematics I", dates: "February 2026 - May 2026" },
+            { name: "CPEG 222 - Microprocessor Systems", dates: "August 2025 - December 2025" },
+            { name: "ELEG 205 - Analog Circuits I", dates: "August 2025 - December 2025" },
+            { name: "MATH 243 - Analytic Geometry and Calculus C", dates: "August 2025 - December 2025" },
+            { name: "PHYS 208 - Fundamentals of Physics II", dates: "August 2025 - December 2025" },
+            { name: "PHYS 228 - Fundamentals of Physics Laboratory II", dates: "August 2025 - December 2025" }
+        ]
+    },
+    {
+        school: "Penncrest High School",
+        degree: "High School Diploma",
+        gpa: 3.67,
+        date: "September 2020 - May 2024",
+        courses: [
+            { name: "Manufacturing, Design and Engineering I", dates: "September 2022 - June 2023" },
+            { name: "Manufacturing, Design and Engineering II", dates: "September 2023 - June 2024" }
+        ]
+    }
+];
+
+// Awards
+const awards = [
+    {
+        name: "DoW SMART Scholarship",
         issuer: "U.S. Department of War",
         date: "April 2026",
-        details: "Awarded to students is designated STEM fields with a minimum GPA of 3.0 and demonstrate significant skills and learning ability in their field of study."
+        details: "SMART is a one-to-one scholarship-for-service program hosted by the United States Department of War (DoW) since 2006. Its mission is to promote the development of domestic engineering talent within the DoW, and it has funded the education of over 6,000 students ranging from undergraduates to PhD students."
     },
     {
         name: "Dean's List",
@@ -151,7 +153,7 @@ const Earnings = [
     },
     {
         name: "Eagle Scout",
-        issuer: "BSA Troop 85",
+        issuer: "Boy Scouts of America, Troop 85",
         date: "May 2024",
         details: ""
     },
@@ -159,7 +161,7 @@ const Earnings = [
         name: "Team MVP",
         issuer: "University of Delaware, College of Engineering",
         date: "December 2024",
-        details: "Voted by team mates as most valuable contributor to the success of our course project."
+        details: "Voted by teammates as the most valuable contributor to the success of our course project."
     },
     {
         name: "TechCraft Excellence",
@@ -173,6 +175,6 @@ const Earnings = [
         date: "June 2024",
         details: "Awarded for outstanding performance in the Manufacturing, Design and Engineering program."
     }
-]
+];
 
-export { Pskills, HighSchool, University, Earnings};
+export { skills, experience, schools, awards };
