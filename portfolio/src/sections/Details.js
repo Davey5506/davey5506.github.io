@@ -188,7 +188,7 @@ export const contact = {
         "sponsored by the Naval Surface Warfare Center, Indian Head Division. I research in mold electronics " +
         "for use in prosthetics, and I support the" +
         "Analog Circuits I and Microprocessor Systems courses at the University of Delaware.",
-    email: "kpdmmvi@gmail.com",
+    email: "kennedyd@udel.edu",
     phone: "(484) 574-1810",
     links: [
         { name: "LinkedIn", label: "david-kennedy-mmvi", url: "https://www.linkedin.com/in/david-kennedy-mmvi" },
