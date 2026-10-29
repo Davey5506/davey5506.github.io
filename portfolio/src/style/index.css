@@ -435,3 +435,99 @@ footer h4 {
     margin: 0 0 0.75rem;
     break-inside: avoid;
 }
+/* Contact page (contact/index.html) is only opened on phones */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    min-height: 100svh;
+    padding: calc(5.5rem + env(safe-area-inset-top)) 1rem calc(1.5rem + env(safe-area-inset-bottom));
+    -webkit-tap-highlight-color: transparent;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.5rem 1.25rem;
+    gap: 0.5rem;
+}
+
+.contact-card:hover {
+    transform: none;
+    box-shadow: var(--card-shadow);
+}
+
+.contact-portrait {
+    width: 8rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid var(--card-border-color);
+    object-fit: cover;
+}
+
+.contact-card h2 {
+    margin: 0.5rem 0 0;
+}
+
+.contact-title {
+    margin: 0 0 0.5rem;
+    color: #BFBFBF;
+}
+
+.card .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    border-top: 1px solid var(--card-border-color);
+}
+
+.card .contact-list li {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid var(--card-border-color);
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    min-height: 3.5rem;
+    padding: 0.6rem 0.25rem;
+    text-align: left;
+}
+
+.contact-row:active {
+    background-color: var(--secondary-color);
+}
+
+.contact-label {
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #BFBFBF;
+}
+
+.contact-value {
+    font-family: var(--body-font-family);
+    font-size: 1rem;
+    color: var(--font-color);
+    overflow-wrap: anywhere;
+}
+
+.contact-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 3.25rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--font-color);
+    background-color: var(--main-accent-color);
+    border-radius: 0.5rem;
+}
+
+.contact-download:active {
+    filter: brightness(0.85);
+}

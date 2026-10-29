@@ -178,3 +178,21 @@ const awards = [
 ];
 
 export { skills, experience, schools, awards };
+
+export const contact = {
+    firstName: "David",
+    lastName: "Kennedy",
+    title: "Electrical Engineering Student",
+    organization: "University of Delaware",
+    synopsis: "I am an Electrical Engineering student at the University of Delaware and a DoW SMART Scholar " +
+        "sponsored by the Naval Surface Warfare Center, Indian Head Division. I research in mold electronics " +
+        "for use in prosthetics, and I support the" +
+        "Analog Circuits I and Microprocessor Systems courses at the University of Delaware.",
+    email: "kpdmmvi@gmail.com",
+    phone: "(484) 574-1810",
+    links: [
+        { name: "LinkedIn", label: "david-kennedy-mmvi", url: "https://www.linkedin.com/in/david-kennedy-mmvi" },
+        { name: "GitHub", label: "Davey5506", url: "https://github.com/Davey5506" },
+        { name: "Website", label: "www.davidkennedy.us", url: "https://www.davidkennedy.us" }
+    ]
+};
