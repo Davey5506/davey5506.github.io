@@ -189,7 +189,7 @@ export const contact = {
         "for use in prosthetics, and I support the" +
         "Analog Circuits I and Microprocessor Systems courses at the University of Delaware.",
     email: "kennedyd@udel.edu",
-    phone: "(484) 574-1810",
+    phone: "+14845741810",
     links: [
         { name: "LinkedIn", label: "david-kennedy-mmvi", url: "https://www.linkedin.com/in/david-kennedy-mmvi" },
         { name: "GitHub", label: "Davey5506", url: "https://github.com/Davey5506" },
